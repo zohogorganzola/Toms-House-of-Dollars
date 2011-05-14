@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #003F00; color:#fff; text-shadow: none; }
 ::selection { background:#003F00; color:#fff; text-shadow: none; }
 
 /**
@@ -163,9 +163,9 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
  */
 
 .rounded-corners {
-  -moz-border-radius: 0px 10px 10px 0px;
-  -webkit-border-radius: 0px 10px 10px 0px;
-  border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 0px 10px 0px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .box-shadow {
@@ -174,16 +174,27 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
     box-shadow: 0 0 12px 3px #000;	
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	background: url("../img/background3.png");
 	background-color: #003F00;
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%
 }
 
 header {
 	text-align: center;
 	color: #006100;
 	background-color: #FFF;
+	padding: 10px 0px;
 }
+
 header h1 {
 	font-family: Gill Sans MT Condensed;
 	font-size: 60px;
@@ -211,7 +222,7 @@ header h1 {
 #nav ul li {
 	border-left: 1px solid #FFF;
 	display: inline;
-	padding-left: 5px;
+	padding: 0px 15px;
 }
 
 #nav a, #nav a:active, #nav a:visited { 
@@ -226,27 +237,41 @@ header h1 {
 	font-weight: bold;
 }
 
-#disclaimer {
+#bottom_bar {
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
 	background-color: #000;
-	text-align: right;
 	color: #A0E2E2;
+	text-align: center;
+}
+
+#disclaimer {
+	float: left;
+	padding-left: 5px;
+	width: 33%;
+	text-align: left;
 }
 
 #disclaimer a {
 	cursor: pointer;
 }
 
+#ddate {
+	float: right;
+	padding-right: 5px;
+	width: 33%;
+	text-align: right;
+}
+
 #container {
     width:963px;
     margin:auto;
-    padding: 0px 9px 9px 9px;
+    padding: 0px 9px 50px 9px;
 }
 
 #main {
-	margin-top: 25px;
+	margin-top: 35px;
 	background: none;
 	
 }
@@ -256,13 +281,14 @@ header h1 {
 	font-size: 32px;
 	font-weight: 100;
 }
-#main h2 {
+#main h3 {
 	font-size: 18px;
 	font-weight: normal;
 }
 
 #main p {
-	text-indent:50px;
+	text-indent:25px;
+	padding-top: 10px;
 }
 
 #main a, #main a:active, #main a:visited {
@@ -273,14 +299,18 @@ header h1 {
 	color: #A0E2E2;
 }
 
-#main h1 + h2 {
+#main h1 + h3 {
 	margin-top: -10px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+#main h2 {
+	font-size: 1.3em;
 }
 
 #main_left {
 	float: left;
-	padding: 25px 10px 50px 20px;
+	padding: 7px 20px 50px 20px;
 	width: 70%;
 	background-color: #FFF;
 }
@@ -293,16 +323,34 @@ header h1 {
 	border: 2px solid #000000;
 }
 
+.horiz_rule {
+	margin: 5px 0px;
+	height: 15px;
+	background: url("../img/separator3.png");
+}
+
+p.description {
+	
+}
+
+p.project_link {
+	text-align: right;
+}
+
 #main_right {
 	float: right;
-	width: 22%;
+	width: 22.5%;
 	height: 100%;
-	padding:25px 10px 50px;
 	vertical-align: top;
-	background-color: #FFF;
 }
 
 .main_right_box {
+	padding: 7px 10px 25px;
+	margin-bottom: 35px;
+	background-color: #FFF;
+}
+
+.main_right_box h1 {
 	
 }
 
@@ -320,13 +368,8 @@ header h1 {
 }
 
 .main_right_box ul li {
-	padding-bottom: 15px;
-}
-
-.twitter_link {
-	background: url("../img/twitter_logo.png") no-repeat left;
-	background-position-x: -7px;
-	padding-left: 23px;
+	padding-bottom: 7px;
+	padding-top: 7px;
 }
 
 

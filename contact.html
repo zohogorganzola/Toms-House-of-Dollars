@@ -1,0 +1,127 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Tom's House of Dollars - Projects</title>
+  <meta name="description" content="">
+  <meta name="author" content="Tom Chandler">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- All JavaScript at the bottom, except for Modernizr and Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries -->
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+  <script src='js/libs/respond.min.js'></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	<div id="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li class="selected"><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div id="container">
+    <header class="box-shadow rounded-corners">
+		<img src="img/header_logo3.png" width="725" height="40" />
+    </header>
+    <div id="main" class="clearfix" role="main">
+    	<div id="main_left" class="box-shadow">
+	    	<h1>Contact Me</h1>
+
+
+	    	<div class="horiz_rule"></div>
+
+	    	<h2>E-Mail</h2>
+	    	<p class="description">
+				zohogorganzola (at) gmail (dot) com
+			</p>
+			
+	    	
+	    	<h2>Twitter</h2>
+	    	<p class="description">
+				&#64;<a href="http://twitter.com/zohogorganzola">zohogorganzola</a>
+			</p>
+			
+    	</div>
+    	<div id="main_right">
+    		<div class="main_right_box box-shadow">
+    			<h1>On The Web</h1>
+    			<div class="horiz_rule"></div>
+	    		<ul>
+	    			<li><a href="http://twitter.com/zohogorganzola">
+		    				<img src="img/twitter2.png" width="24" height="24" style="vertical-align:middle" border="0" />
+		    				<u>Twitter</u>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="http://www.linkedin.com/pub/thomas-chandler/8/b95/568">
+							<img src="img/linkedin.png" width="24" height="24" style="vertical-align:middle" border="0" />
+							<u>LinkedIn</u>
+    					</a>
+	    			</li>
+	    			<li>
+	    				<a href="http://github.com/zohogorganzola">
+							<img src="img/github.png" width="24" height="24" style="vertical-align:middle" border="0" />
+							<u>Github</u>
+    					</a>
+	    			</li>
+	    		</ul>
+    		</div>
+    		<div class="main_right_box box-shadow">
+    			<h1>Projects</h1>
+    			<div class="horiz_rule"></div>
+	    		<ul>
+	    			<li><a href="#">
+		    				<img src="img/firestarter_logo.png" width="24" height="24" style="vertical-align:middle" border="0" />
+		    				<u>FireStarter</u>
+	    				</a>
+	    				(<a class="git_link" href="http://github.com/zohogorganzola/FireStarter">git</a>)
+	    			</li>
+	    		</ul>
+    		</div>
+    	</div>
+    </div>
+    <footer>
+    </footer>
+  </div> <!--! end of #container -->
+  	<div id="bottom_bar" class="clearfix">
+		<div id="ddate"></div>
+    	<span>&copy; Copyright 2011 by Tom Chandler</span>
+		<div id="disclaimer" onclick="nextJoke.call(nextJoke)">
+			<a id="joke0">*House of Dollars is a metaphor.</a>
+			<a id="joke1" style="display: none;">*A meta for what?</a>
+			<a id="joke2" style="display: none;">*A meta for this joke!</a>
+			<a id="joke3" style="display: none;">*What joke?</a>
+		</div>
+  	</div>
+  </div>
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.6.min.js'>\x3C/script>")</script>
+  <script src="js/libs/ddate.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+</body>
+</html>
